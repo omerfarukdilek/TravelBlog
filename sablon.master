@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="sablon.master.cs" Inherits="sablon" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="sablon.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 40px;
+            height: 40px;
+        }
+        .auto-style2
+        {
+            width: 100%;
+        }
+        .auto-style3
+        {
+            height: 28px;
+            width: 150px;
+        }
+        .auto-style4
+        {
+            height: 40px;
+            width: 150px;
+        }
+        .auto-style5
+        {
+            width: 90px;
+        }
+        .auto-style6
+        {
+            height: 28px;
+            width: 90px;
+        }
+        .auto-style7
+        {
+            height: 40px;
+            width: 90px;
+        }
+        .auto-style8
+        {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <div class="ustbolum">  <div class="ustbolumsol">
+            <table class="auto-style2">
+                <tr>
+                    <td class="auto-style5">
+            <asp:Label ID="lbl_kuladi" runat="server" Text="Kullanıcı Adı"></asp:Label>
+                    </td>
+                    <td class="auto-style8">
+            <asp:TextBox ID="txt_kuladi" runat="server" Width="140px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6">
+            <asp:Label ID="lbl_sifre" runat="server" Text="Şifre"></asp:Label>
+                    </td>
+                    <td class="auto-style3">
+            <asp:TextBox ID="txt_sifre" runat="server" TextMode="Password" Width="140px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style7">
+            <asp:Button ID="btn_kayit" runat="server" Text="Kayıt Ol" />
+                    </td>
+                    <td class="auto-style4">
+            <asp:Button ID="btn_giris" runat="server" Text="Giriş Yap" OnClick="btn_giris_Click" />
+                    </td>
+                </tr>
+            </table>
+            </div>  <div class="ustbolumsag">
+           <div class="arama"> <asp:TextBox ID="txt_ara" placeholder="Makale Ara" runat="server"></asp:TextBox>
+            <asp:Button ID="btn_ara" runat="server" Text="ara" Width="54px" OnClick="btn_ara_Click" /></div>
+                    <div class="sosyal">
+           <a href="http://www.facebook.com/omerfaruk.dilek.9" target="_blank"> <img alt="" class="auto-style1" src="images/Facebook.png"  /></a>
+           <a href="http://www.twitter.com/omerfaruk_dilek"    target="_blank"> <img alt="" class="auto-style1" src="images/Twitter.png"   /></a>
+           <a href="http://www.instagram.com/omerfaruk_dilek"  target="_blank"> <img alt="" class="auto-style1" src="images/instagram.gif" /></a>
+                    </div>
+           </div>
+           </div>
+        <div class="menu">  <div class="menusol"> </div> 
+
+                            <div class="menuorta"> 
+                                <ul>
+                                <li><a href="Default.aspx"> Anasayfa</a></li>
+                                <li><a href="Hakkimda.aspx"> Hakkımda</a></li>  
+                                <li><a href="gezinotlari.aspx">Gezi Notları</a>
+
+                                    <ul>
+                                        <li><a href="#">İstanbul</a></li>
+                                        <li><a href="#">Diğer</a></li>
+
+
+                                    </ul>
+
+                                </li> 
+                                <li><a href="Kayitol.aspx"> Kayıt Ol</a></li>   
+                                <li><a href="iletisim.aspx"> İletişim</a></li> 
+
+                                </ul>
+                                </div>
+
+              <div class="menusag"></div>     
+        </div>
+
+        <div class="icerik">
+
+        <div class="solicerik"> <div class="kategori">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <asp:Literal ID="lt_kategori" runat="server"></asp:Literal>
+            
+            <br />
+            <br />
+                </asp:ContentPlaceHolder>
+            </div> </div>
+
+
+        <div class="sagicerik">
+
+        
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <asp:Literal ID="lt_makale" runat="server"></asp:Literal>
+        
+        </asp:ContentPlaceHolder>
+        </div>
+
+            </div>
+
+        <div class="footer">
+
+            <div class="footersol">
+                
+      <a href="#">Anasayfa</a> | 
+      <a href="#">Hakkımda</a> | 
+      <a href="#">Gezi Notları</a> | 
+      <a href="#">Kayıt Ol</a> | 
+      <a href="#">İletişim</a>
+    
+
+
+
+            </div>
+
+            <div class="footersag">Copyright 2015 - Tüm hakları saklıdır</div>
+
+
+        </div>
+
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,206 @@
+﻿body {
+}
+
+
+.ustbolum
+{
+    width: 1000px;
+    height: 250px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:blue;
+    background-image:url(http://localhost:9830/images/banner.jpg);
+   
+}
+
+
+
+.menu
+{
+    width:1000px;
+    height:50px;
+    margin-left:auto;
+    margin-right:auto;
+ 
+}
+
+
+.menu .menusol
+    {
+        width:250px;
+        height:50px;
+        float:left;
+        background-color:#333;
+        border-top:3px solid #bb1375;
+
+
+
+
+    }
+
+
+
+
+
+    .menu .menuorta
+    {
+        width:600px;
+        height:50px;
+        float:left;
+        
+
+        background-color:#333;
+        border-top:3px solid #bb1375;
+        
+
+    }
+
+        .menu .menuorta ul
+        {
+           list-style-type:none;
+           background-color:#333;
+           margin:0px;
+           padding:0px;
+
+        }
+
+            .menu .menuorta ul li
+            {
+                float:left;
+                
+                position:relative;
+                list-style:none;
+                width:120px;
+                
+            }
+
+                .menu .menuorta ul li a
+                {
+                    display:block;
+                    text-decoration:none;
+                    color:#fff;
+                    padding:16px;
+                    
+
+                }
+
+
+
+                    .menu .menuorta ul li a:hover
+                    {
+
+                        background-color:#bb1375;
+
+
+                    }
+
+
+
+
+.menu .menuorta ul li ul
+{
+
+    display:none;
+    position:absolute;
+    left:0px;
+    top:50px;
+
+
+}
+
+
+.menu .menuorta ul li:hover ul
+{
+    display:block;
+    
+}
+
+
+
+
+
+     .menu .menusag
+    {
+        width:150px;
+        height:50px;
+        float:right;
+        background-color:#333;
+        border-top:3px solid #bb1375;
+
+
+
+
+    }
+
+
+
+.icerik
+{
+    width:1000px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:pink;
+
+
+}
+
+.solicerik
+{
+    width:250px;
+    height:600px;
+    float:left;
+    background-color:red;
+
+}
+
+
+    .solicerik .foto
+    {
+        width:250px;
+        height:150px;
+        float:left;
+        background-color:#7bd1c4;
+
+    }
+
+
+    .solicerik .uyebilgi
+    {
+        width:250px;
+        height:auto;
+        float:left;
+        background-color:#e1bc56;
+
+    }
+
+
+.sagicerik
+{
+    width:750px;
+    height:auto;
+    background-color:yellow;
+    float:right;
+    
+}
+
+.makale
+{
+    width:600px;
+    height:auto;
+    background-color:#e1bc56;
+    margin-left:50px;
+    margin-top:50px;
+
+
+}
+
+.makaleici
+{
+    width:600px;
+    height:auto;
+    margin-top:100px;
+    background-color:aqua;
+
+}
+
